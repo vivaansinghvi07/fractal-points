@@ -20,6 +20,7 @@ def test(a, b):
         xvalue = xvalue + a
         yvalue = yvalue + b
     
+    # can set bounds for border
     if math.sqrt(xvalue**2 + yvalue**2) < 2:
         return True
 
