@@ -9,6 +9,7 @@ print("a + bi")
 
 c = float(input("a: "))
 d = float(input("b: "))
+depth = int(input("Depth: "))
 
 # function that computes the squaring and addition of two imaginary points a + bi and c + di
 xFunc = lambda a, b: (a+c)**2-(b+d)**2
@@ -16,7 +17,7 @@ yFunc = lambda a, b: 2*(a+c)*(b+d)
 
 # calculates distance from center of the point
 def test(a, b):
-    for _ in range(20):
+    for _ in range(depth):
         temp = a
         a = xFunc(a, b)
         b = yFunc(temp, b)
@@ -28,7 +29,7 @@ while True:
     try:
         # gets value to be analyzed
         val = test(e, f)
-        if val < 1:
+        if val <= 1:
             print(f"({e}, {f})")
     except OverflowError:
         continue
