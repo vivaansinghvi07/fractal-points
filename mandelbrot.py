@@ -9,7 +9,7 @@ import pandas as pd
 depth = int(input("Depth: "))
 
 # gets bounds
-x1, x2, y1, y2 = list(map(float, input("Enter bounds here in the following format; x1 x2 y1 y2: ").split(" ")))
+x1, x2, y1, y2 = list(map(float, input("Enter bounds here in the format \"x1 x2 y1 y2\": ").split(" ")))
 
 # gets count of points
 goal = int(input("Point Count: "))
@@ -40,7 +40,7 @@ def test(a, b, depth):
     
     # can set bounds for border
     value = math.sqrt(xvalue**2 + yvalue**2)
-    if value < 2 and value > 1.5: # edit this to change the border (no second boolean for fully filled)
+    if value < 2 and value > 0: # edit this to change the border width
         return True
 
 while count < goal:
@@ -54,11 +54,11 @@ while count < goal:
             yVals.append(f)
             count += 1
             if not count % (goal // 100): # shows progress
-                print(str(count) + "...")
+                print(str(count) + " points generated...")
     except OverflowError:
         continue
 
 # plots the graph
 df = pd.DataFrame({'x': xVals, 'y': yVals})
-df.plot.scatter(x = 'x', y = 'y', s = 1)
+df.plot.scatter(x = 'x', y = 'y', s = 0.4)
 mpl.pyplot.show()
