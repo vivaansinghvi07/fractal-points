@@ -38,4 +38,4 @@ Then, your graph will look like this:
 
 ![Fractal Zoomed](imgs/shapesZOOMED.png)
 
-Note: Since there were 20 million points generated, the graph will look almost filled in. However, upon zooming, you will see that it's just made of points.
+Note: Since there were 20 million points generated, the graph will look solid. However, upon zooming further, you would be able to see the dots.
