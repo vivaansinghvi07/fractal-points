@@ -1,6 +1,5 @@
 import math
 import random
-import numpy as np
 import matplotlib as mpl
 import pandas as pd
 
@@ -40,7 +39,8 @@ def test(a, b, depth):
         yvalue = yvalue + b
     
     # can set bounds for border
-    if math.sqrt(xvalue**2 + yvalue**2) < 2:
+    value = math.sqrt(xvalue**2 + yvalue**2)
+    if value < 2 and value > 1.5: # edit this to change the border (no second boolean for fully filled)
         return True
 
 while count < goal:
@@ -53,6 +53,8 @@ while count < goal:
             xVals.append(e)
             yVals.append(f)
             count += 1
+            if not count % (goal // 100): # shows progress
+                print(str(count) + "...")
     except OverflowError:
         continue
 
