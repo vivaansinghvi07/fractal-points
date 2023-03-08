@@ -31,14 +31,18 @@ def randomInBounds(min, max):
 # runs mandelbrot set algorithm
 def test(a, b, depth, lowerBound):
     
+    # initializes starter values
     xValue = 0
     yValue = 0
 
     for _ in range(depth):
+
+        # computes the square
         xTemp = xValue
         xValue = (xValue)**2-(yValue)**2
         yValue = 2*(xTemp)*(yValue)
         
+        # adds the randomly generated constant point
         xValue = xValue + a
         yValue = yValue + b
     
