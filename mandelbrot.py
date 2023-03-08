@@ -20,6 +20,10 @@ xVals, yVals = [], []
 # declares starting count
 count = 0
 
+# option for only showing the border
+border = input("Only show a border? [y/n]: ") == "y"
+
+
 # gets a random number within the bounds
 def randomInBounds(min, max):
     return (random.random()) * (max - min) + min
@@ -27,19 +31,19 @@ def randomInBounds(min, max):
 # runs mandelbrot set algorithm
 def test(a, b, depth):
     
-    xvalue = 0
-    yvalue = 0
+    xValue = 0
+    yValue = 0
 
     for _ in range(depth):
-        xtemp = xvalue
-        xvalue = (xvalue)**2-(yvalue)**2
-        yvalue = 2*(xtemp)*(yvalue)
+        xTemp = xValue
+        xValue = (xValue)**2-(yValue)**2
+        yValue = 2*(xTemp)*(yValue)
         
-        xvalue = xvalue + a
-        yvalue = yvalue + b
+        xValue = xValue + a
+        yValue = yValue + b
     
     # can set bounds for border
-    value = math.sqrt(xvalue**2 + yvalue**2)
+    value = math.sqrt(xValue**2 + yValue**2)
     if value < 2 and value > 0: # edit this to change the border width
         return True
 
