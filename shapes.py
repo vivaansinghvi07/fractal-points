@@ -24,6 +24,7 @@ def test(a, b):
     return math.sqrt(a**2 + b**2)
 
 while True:
+    # sets bounds for the point generation
     e = (random.random() - 0.5) * 4
     f = (random.random() - 0.5) * 4
     try:
