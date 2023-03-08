@@ -20,16 +20,16 @@ xVals, yVals = [], []
 # declares starting count
 count = 0
 
-# option for only showing the border
+# option for only showing the border; if you need a border then perform calculations to limit it
 border = input("Only show a border? [y/n]: ") == "y"
-
+lowerBound = (1.8 if depth < 20 else (1.6 if depth < 50 else (1.4 if depth < 100 else (1.2 if depth < 200 else 1)))) if border else 0
 
 # gets a random number within the bounds
 def randomInBounds(min, max):
     return (random.random()) * (max - min) + min
 
 # runs mandelbrot set algorithm
-def test(a, b, depth):
+def test(a, b, depth, lowerBound):
     
     xValue = 0
     yValue = 0
@@ -44,7 +44,7 @@ def test(a, b, depth):
     
     # can set bounds for border
     value = math.sqrt(xValue**2 + yValue**2)
-    if value < 2 and value > 0: # edit this to change the border width
+    if value < 2 and value > lowerBound: # edit this to change the border width manually
         return True
 
 while count < goal:
@@ -53,7 +53,7 @@ while count < goal:
 
     # saves point if test passed
     try:
-        if test(e, f, depth):
+        if test(e, f, depth, lowerBound):
             xVals.append(e)
             yVals.append(f)
             count += 1
