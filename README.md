@@ -71,7 +71,6 @@ This one
 
 !["Shot 2"](imgs/mandelbrotSNAPSHOT2.png)
 !["Shot 3"](imgs/mandelbrotSNAPSHOT3.png)
-!["Shot 4"](imgs/mandelbrotSNAPSHOT4.png)
 !["Shot 5"](imgs/mandelbrotSNAPSHOT5.png)
 
 </details>
