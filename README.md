@@ -52,10 +52,10 @@ This function generates an image of the mandelbrot set, with varying degrees of 
 ### Output
 Again, the program automatically displays progress messages while calculating the points. When done, the graph will open automatically on your computer.
 
-The following graph is with the settings:
-`Depth: 100`
-`Bounds: -2 0.5 -1 1`
-`Point Count: 300000`
+The following graph is with the settings:<br>
+`Depth: 100`<br>
+`Bounds: -2 0.5 -1 1`<br>
+`Point Count: 300000`<br>
 `Only show borders: y`
 
 This graph took many hours to render due to how thin the borders were. However, the result was worth it:
