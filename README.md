@@ -39,3 +39,15 @@ Then, your graph will look like this:
 ![Fractal Zoomed](imgs/shapesZOOMED.png)
 
 Note: Since there were 20 million points generated, the graph will look solid. However, upon zooming further, you would be able to see the dots.
+
+## mandelbrot.py
+This function generates an image of the mandelbrot set, with varying degrees of depth and the option to have a border.
+
+### Inputs
+- `Depth`: This is the number of times the function iterates. A higher depth is a more accurate Mandelbrot set.
+- `Bounds (x1 x2 y1 y2)`: This is the bounds between which points are generated.
+- `Point Count`: This is the number of points generated.
+- `Only show a border?:` If answered yes, you will be displayed with a border of the Mandelbrot set rather than the filled in set itself. 
+
+### Output
+Again, the program automatically displays progress messages while calculating the points. When done, the graph will open automatically on your computer.
