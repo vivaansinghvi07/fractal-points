@@ -77,7 +77,4 @@ This one is particularly interesing in that it seems to be a mini-version of the
 Shot 3
 !["Shot 3"](imgs/mandelbrotSNAPSHOT3.png)
 
-Shot 4
-!["Shot 4"](imgs/mandelbrotSNAPSHOT4.png)
-
 </details>
