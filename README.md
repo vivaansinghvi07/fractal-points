@@ -66,11 +66,18 @@ Zooming into the graph, I collected some of my favorite snapshots.
 <details>
 <summary>View them here</summary>
 
-This one
+Shot 1
 !["Shot 1"](imgs/mandelbrotSNAPSHOT1.png)
 
+
+Shot 2
 !["Shot 2"](imgs/mandelbrotSNAPSHOT2.png)
+This one is particularly interesing in that it seems to be a mini-version of the set, located far to the left of the original
+
+Shot 3
 !["Shot 3"](imgs/mandelbrotSNAPSHOT3.png)
-!["Shot 5"](imgs/mandelbrotSNAPSHOT5.png)
+
+Shot 4
+!["Shot 4"](imgs/mandelbrotSNAPSHOT4.png)
 
 </details>
