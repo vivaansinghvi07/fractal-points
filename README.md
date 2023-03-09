@@ -1,11 +1,11 @@
 # Factorial Generator
-A python project I made a while ago that computes points on various kinds of fractals / cool shapes!
+A python project I made a while ago that computes points on various kinds of fractals / cool shapes! Now, it's been updated with many features such as border displaying, bound setting, function depth, and point counts!
 
 ## Setup:
 - Open a virtual python environment on your VS Code terminal (if using VS)
 - Open a new python terminal
 - If not already, install matplotlib and pandas
-    - This can be done with `$ pip install matplotlib` and `$pip install pandas`
+    - This can be done with `$ pip install matplotlib` and `$ pip install pandas`
 - You should be good to go! Read the instructions for each function if you use it!
 
 ## shapes.py
