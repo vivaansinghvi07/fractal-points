@@ -12,10 +12,10 @@ A python project I made a while ago that computes points on various kinds of fra
 This function takes in a constant complex number, inputted with the prompt `a + bi`, where `a` is represented by `c` and `b` is represented by `d` within the code. Then, points are randomly generated, upon which the constant number is added, then the result is entered into the function again. Whichever points do not diverge to infinity are kept within the shape.
 
 ### Inputs
-- `a` and `b`: The user can enter the complex number here
-- `Depth`: This is the amount of times the function is executed. Generally, greater depths tend to allow less points to pass the test
-- `Bounds (x1 x2 y1 y2)`: This is simply the boundaries in which points are generated
-- `Point Count`: This is how many points are generated. The time can vary since shapes will have different sizes and 'tolerance'
+- `a` and `b`: The user can enter the complex number here. Recommended: Both between -1 and 1.
+- `Depth`: This is the amount of times the function is executed. Generally, greater depths tend to allow less points to pass the test. Recommended: 5-15.
+- `Bounds (x1 x2 y1 y2)`: This is simply the boundaries in which points are generated. Recommended: -2 2 -2 2.
+- `Point Count`: This is how many points are generated. The time can vary since shapes will have different sizes and 'tolerance'. If you don't see updates in desired time, consider changing your depth / point count / constant.
 
 ### Output 
 While calculating your points, the program will display messages telling you how many have been created. When it's done, a graph should automatically open on your computer, showing your completed shape. The graph can be manipulated using matplotlib's tools.
@@ -44,9 +44,9 @@ Note: Since there were 20 million points generated, this graph in particular wil
 This function generates an image of the mandelbrot set, with varying degrees of depth and the option to have a border.
 
 ### Inputs
-- `Depth`: This is the number of times the function iterates. A higher depth is a more accurate Mandelbrot set.
-- `Bounds (x1 x2 y1 y2)`: This is the bounds between which points are generated.
-- `Point Count`: This is the number of points generated.
+- `Depth`: This is the number of times the function iterates. A higher depth is a more accurate Mandelbrot set. Recommended: Less than 200.
+- `Bounds (x1 x2 y1 y2)`: This is the bounds between which points are generated. Recommended: -2 0.5 -1 1.
+- `Point Count`: This is the number of points generated. Recommended: < 100000 if making a border, otherwise, as high as you want.
 - `Only show a border?:` If answered yes, you will be displayed with a border of the Mandelbrot set rather than the filled in set itself. 
 
 ### Output
