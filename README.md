@@ -38,7 +38,7 @@ Then, your graph will look like this:
 
 ![Fractal Zoomed](imgs/shapesZOOMED.png)
 
-Note: Since there were 20 million points generated, the graph will look solid. However, upon zooming further, you would be able to see the dots.
+Note: Since there were 20 million points generated, this graph in particular will look solid. However, upon zooming further, you would be able to see the dots.
 
 ## mandelbrot.py
 This function generates an image of the mandelbrot set, with varying degrees of depth and the option to have a border.
