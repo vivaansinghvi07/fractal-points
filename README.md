@@ -51,3 +51,27 @@ This function generates an image of the mandelbrot set, with varying degrees of 
 
 ### Output
 Again, the program automatically displays progress messages while calculating the points. When done, the graph will open automatically on your computer.
+
+The following graph is with the settings:
+`Depth: 100`
+`Bounds: -2 0.5 -1 1`
+`Point Count: 300000`
+`Only show borders: y`
+
+This graph took many hours to render due to how thin the borders were. However, the result was worth it:
+
+!["Complete Border Graph"](imgs/mandelbrot.png)
+
+Zooming into the graph, I collected some of my favorite snapshots. 
+<details>
+<summary>View them here</summary>
+
+This one
+!["Shot 1"](imgs/mandelbrotSNAPSHOT1.png)
+
+!["Shot 2"](imgs/mandelbrotSNAPSHOT2.png)
+!["Shot 3"](imgs/mandelbrotSNAPSHOT3.png)
+!["Shot 4"](imgs/mandelbrotSNAPSHOT4.png)
+!["Shot 5"](imgs/mandelbrotSNAPSHOT5.png)
+
+</details>
