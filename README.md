@@ -1,4 +1,4 @@
-# Factorial Generator
+# Fractal Generator
 A python project I made a while ago that computes points on various kinds of fractals / cool shapes! Now, it's been updated with many features such as border displaying, bound setting, function depth, and point counts!
 
 Note: I have expanded on this by making GIFs of the Mandelbrot Set [here](https://github.com/vivaansinghvi07/mandelbrot-gifs).
