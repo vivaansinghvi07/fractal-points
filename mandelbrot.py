@@ -1,7 +1,6 @@
 import math
 import random
-import matplotlib as mpl
-import pandas as pd
+import matplotlib.pyplot as plt
 
 # mandelbrot set maker 
 
@@ -67,6 +66,5 @@ while count < goal:
         continue
 
 # plots the graph
-df = pd.DataFrame({'x': xVals, 'y': yVals})
-df.plot.scatter(x = 'x', y = 'y', s = 0.4)
-mpl.pyplot.show()
+plt.scatter(xVals, yVals, s=0.4)
+plt.show()
